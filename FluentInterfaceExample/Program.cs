@@ -36,7 +36,7 @@ namespace FluentInterfaceExample
             Character hero = builder.Value();
 
             // Put our hero to battle against endless enemies, and see how long he survives!
-            while (hero.IsAlive)
+            do
             {
                 // Build an enemy with the expression builder.
                 builder.Create(CommonHelper.GenerateRandomName())
@@ -56,7 +56,7 @@ namespace FluentInterfaceExample
 
                 // Battle time!
                 CommonHelper.Battle(hero, enemy);
-            }
+            } while (hero.IsAlive);
 
             Console.ReadKey();
         }
