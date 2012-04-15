@@ -42,7 +42,7 @@ namespace FluentInterfaceExample
                 builder.Create(CommonHelper.GenerateRandomName())
                     .As((Character.ClassType)ran.Next(4))
                     .WithAge(ran.Next(12, 200))
-                    .HP(ran.Next(5, 12))
+                    .HP(ran.Next(8, 15))
                     .Str(ran.Next(21))
                     .Agi(ran.Next(21))
                     .Int(ran.Next(21))
